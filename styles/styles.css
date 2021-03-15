@@ -1,0 +1,666 @@
+/* GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(#26aad9, #176f8f);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a,
+li {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+}
+
+h2 {
+  color: white;
+  font-size: 2.4rem;
+  letter-spacing: 0.3rem;
+  font-weight: 500;
+}
+
+h3 {
+  color: white;
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+}
+
+p {
+  color: white;
+  font-size: 1.4rem;
+}
+
+/* NAV SECTION */
+
+#logo {
+  margin: 8px 0;
+  width: 12rem;
+  cursor: pointer;
+}
+
+header {
+  height: auto;
+  background: linear-gradient(#1e2a2e, #000000);
+  padding: 0px 5%;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+
+.nav-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  margin: 0 10px;
+  line-height: 70px;
+  display: flex;
+}
+
+.menu li {
+  margin: 0 50px;
+  line-height: 50px;
+  display: inline-block;
+}
+
+label {
+  font-size: 26px;
+  color: white;
+  width: 26px;
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+.nav-icon {
+  width: 2.5rem;
+  margin: auto;
+}
+
+.search form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1.2rem;
+}
+
+.search input[type="text"] {
+  padding: 1rem 1rem;
+  height: 40px;
+}
+
+.search button {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(#0e46ce, #011337);
+  padding: 0.7rem 1rem;
+  border: none;
+  height: 40px;
+}
+
+/* Main PAGE */
+
+.hero {
+  min-height: 90vh;
+  background: url("/images/pexels-soumil-kumar-735911.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 2.3rem;
+  text-align: center;
+  margin: 1rem;
+  text-shadow: 2px 2px #000000;
+}
+
+.homelogo {
+  width: 45rem;
+  margin-bottom: 6rem;
+}
+
+.container {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.hero button {
+  padding: 2rem 4rem;
+  width: 28rem;
+  height: 7rem;
+  border: none;
+  margin: 3rem;
+  border-radius: 6rem;
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.button1 {
+  background: linear-gradient(#0e46ce, #011337);
+}
+
+.button2 {
+  background: linear-gradient(#ba1f94, #880f6a);
+}
+
+.button1:hover {
+  background: white;
+  color: #0e46ce;
+}
+
+.button2:hover {
+  background: white;
+  color: #ba1f94;
+}
+
+/* HIGHLIGHTED GAMES SECTION */
+
+.highlighted {
+  padding: 10rem 0 3rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.highlighted-games-img {
+  width: 100%;
+  height: 60vh;
+  background-image: url(/images/Games/Cyberpunk.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.highlighted-game-text h2 a {
+  font-size: 2rem;
+}
+
+.line {
+  font-size: 6rem;
+  color: #041c58;
+  font-weight: bold;
+}
+
+.highlighted-img {
+  width: 100%;
+  height: 45rem;
+  object-fit: cover;
+}
+
+.highlighted-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.price-container {
+  display: flex;
+  margin: 0 4rem 0 30rem;
+}
+
+.prices-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.discount {
+  background: linear-gradient(#0e46ce, #011337);
+  padding: 1rem 2rem;
+  margin: 0 2rem 0 20rem;
+  border-radius: 1rem;
+}
+
+.discount p {
+  font-size: 2.5rem;
+}
+
+.prev-price {
+  text-decoration: line-through;
+}
+
+.current-price {
+  color: #00f93a;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.pre-purchase {
+  padding: 2rem 4rem;
+  background: linear-gradient(#0e46ce, #011337);
+  border: none;
+  color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  transition: 0.8s;
+}
+
+.pre-purchase:hover {
+  background: #0048ff;
+}
+
+.container-gamenav {
+  margin-top: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  background: white;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  margin: 0 1.5rem;
+}
+
+.circle1 {
+  background: #00f93a;
+}
+
+/* FEATURED & RECCOMENDED GAMES */
+
+.featured {
+  padding: 3rem 0 5rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.games-container {
+  min-height: 115rem;
+  min-width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.container-games {
+  width: 42rem;
+  height: auto;
+}
+
+.game {
+  height: 25rem;
+  display: flex;
+}
+
+.game img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box-info {
+  background: linear-gradient(#1e2a2e, #000000);
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.box-info p {
+  background: linear-gradient(#0e46ce, #011337);
+  padding: 0.5rem 1rem;
+  margin-right: 2rem;
+}
+
+.spanbox {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.prev-featured {
+  text-decoration: line-through;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.current-featured {
+  color: #00f93a;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.buttonbox {
+  height: 4rem;
+}
+
+.boxgame1 {
+  background: linear-gradient(#0e46ce, #011337);
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.8s;
+}
+
+.boxgame1:hover {
+  background: #0048ff;
+}
+
+#shopping {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+/* COMING SOON */
+
+.coming {
+  padding: 3rem 0 5rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.container-coming-games {
+  min-height: 75rem;
+  min-width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+/* Bestseller & wishlisted section */
+
+.bestseller-wishlisted {
+  min-height: 100vh;
+}
+
+.container-best-wish {
+  height: auto;
+  width: 90%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 8rem;
+}
+
+.container-best {
+  width: 82rem;
+}
+
+.container-wish {
+  width: 82rem;
+}
+
+.best-text {
+  display: flex;
+  align-items: center;
+}
+
+.line2 {
+  font-size: 6rem;
+  color: #460034;
+  font-weight: bold;
+}
+
+.container-long {
+  width: 100%;
+  height: 6.5rem;
+  background: white;
+  display: flex;
+  margin-bottom: 0.8rem;
+}
+
+.small-box-best {
+  background: linear-gradient(#0e46ce, #011337);
+  width: 5rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.small-box p {
+  font-size: 2rem;
+}
+
+.small-game-box {
+  width: 15rem;
+  height: 100%;
+}
+
+.small-game-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-game-info {
+  background: linear-gradient(#1e2a2e, #000000);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.game-name {
+  flex: 1;
+  margin-left: 2rem;
+}
+
+.game-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-discount {
+  background: linear-gradient(#0e46ce, #011337);
+  padding: 1rem 1.5rem;
+  margin: 0 1rem;
+}
+
+.small-box-wish {
+  background: linear-gradient(#ba1f94, #880f6a);
+  width: 5rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FOOTER */
+
+footer {
+  min-height: 35vh;
+  background: linear-gradient(#1e2a2e, #000000);
+}
+
+.container-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: auto;
+  height: auto;
+}
+
+.footer-text,
+.footer-social {
+  width: 22rem;
+}
+
+.footer-text h3 {
+  margin: 2rem 0rem;
+}
+
+.contact {
+  display: flex;
+}
+
+.contact i {
+  margin-right: 0.7rem;
+}
+
+.footer-social h3 {
+  margin: 2rem 0rem;
+}
+
+.footer-social i {
+  margin-right: 0.6rem;
+  color: white;
+}
+
+.footer-social i:hover {
+  color: #0e46ce;
+  cursor: pointer;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+/* MEDIA QUERIES */
+
+/* NAV */
+
+@media screen and (max-width: 1380px) {
+  label {
+    display: block;
+    cursor: pointer;
+    margin: auto;
+  }
+
+  #logo {
+    width: 100px;
+    margin: auto;
+  }
+
+  .menu {
+    text-align: center;
+    display: none;
+  }
+
+  .menu li {
+    margin: auto;
+    display: block;
+  }
+
+  #toggle:checked + .menu {
+    display: block;
+  }
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .nav-icon {
+    margin: 0.5rem 0rem;
+  }
+  .search input[type="text"] {
+    height: 25px;
+    margin-bottom: 0.5rem;
+  }
+  .search button {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.6rem;
+  }
+  .nav-icon {
+    width: 2rem;
+  }
+}
+
+/* HIGLIGHTED GAMES */
+
+@media screen and (max-width: 1140px) {
+  .highlighted-game-text h2 a {
+    font-size: 1.8rem;
+  }
+  .highlighted-game-text p {
+    font-size: 1.2rem;
+  }
+  .pre-purchase {
+    padding: 1.5rem 3rem;
+  }
+  .discount {
+    margin: 0rem 2rem 0 0rem;
+  }
+}
+
+@media screen and (max-width: 905px) {
+  .price-container {
+    margin: 0 2rem 0 5rem;
+  }
+  .discount {
+    padding: 0.5rem 1.5rem;
+  }
+  .curent-price {
+    font-size: 1rem;
+  }
+}
+
+/* FEATURED & COMING GAMES */
+
+@media screen and (max-width: 1700px) {
+  .container-games {
+    margin: 2rem 0rem;
+  }
+}
+@media screen and (max-width: 1277px) {
+  .featured {
+    justify-content: center;
+  }
+  .coming {
+    justify-content: center;
+  }
+}
+
+/* BEST RATED WISHED GAMES */
+
+@media screen and (max-width: 1850px) {
+  .container-best-wish {
+    justify-content: center;
+  }
+}

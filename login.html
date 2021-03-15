@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Login page for gamehub." />
+    <link rel="stylesheet" href="/styles/login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <! -- FONT AWESOME ---------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <title>GameHub | Login</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <a href="index.html">
+          <img id="logo" src="/images/GameHub_Logo.png" alt="logo-nav" />
+        </a>
+
+        <nav>
+          <label for="toggle">&#9776;</label>
+          <input type="checkbox" id="toggle" />
+          <div class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html">Games</a></li>
+              <li><a href="profile.html">Sell now</a></li>
+              <li><a href="index.html">Contact</a></li>
+            </ul>
+            <div class="search">
+              <form>
+                <input type="text" name="search" id="search" />
+                <button type="submit"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <a href="checkout.html">
+          <img class="nav-icon" src="/images/icons/shopping-cart.png" alt="" />
+        </a>
+        <a href="profile.html">
+          <img class="nav-icon" src="/images/icons/profile.png" alt="" />
+        </a>
+      </div>
+    </header>
+
+    <section>
+      <div class="div-header">
+        <img id="logo-header" src="/images/GameHub_Logo.png" alt="Gamehub logo" />
+      </div>
+
+      <div class="form-container">
+        <h2>Login</h2>
+        <form action="https://formspree.io/mqkyjbbd" method="POST">
+          <input type="username" class="input-box" placeholder="Your Username" />
+
+          <input type="password" class="input-box" placeholder="Your Password" />
+
+          <button class="login-btn" value="Send" type="submit">LOG IN</button>
+          <hr />
+          <p>Don't have an account? <a href="signup.html">Register here</a></p>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
