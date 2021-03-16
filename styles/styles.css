@@ -664,3 +664,13 @@ footer {
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .bestseller-wishlisted {
+    margin: auto;
+  }
+
+  html {
+    font-size: 50%;
+  }
+}
